@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Word Count</title>
+  </head>
+  <body>
+      <h1>This is the Word Count home page</h1>
+  <a href="{% url 'about' %}">About me</a>
+      <form action="{% url 'count' %}" >
+      <!-- {% csrf_token %} -->
+        <textarea name="fulltext" rows="8" cols="80"></textarea>
+        <br />
+        <input type="submit" value="Count!"/>
+
+
+
+      </form>
+
+  </body>
+</html>
